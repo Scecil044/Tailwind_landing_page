@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Landing Page</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="relative container mx-auto p-6">
+      <!-- flex container -->
+      <div class="flex items-center justify-between">
+        <!-- image -->
+        <div class="pt-2 cursor-pointer">
+          <img src="./img//logo.svg" alt="" />
+        </div>
+        <!-- menu items -->
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Products</a>
+          <a href="#" class="hover:text-darkGrayishBlue">About us</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+        </div>
+        <!-- button -->
+        <a
+          href="#"
+          class="hidden md:block bg-brightRed hover:bg-brightRedLight pt-2 px-6 p-3 rounded-full text-white"
+          >Get Started</a
+        >
+        <button
+          id="menu-btn"
+          class="block md:hidden hambuger focus:outline-none"
+        >
+          <span class="hambuger-top"></span>
+          <span class="hambuger-middle"></span>
+          <span class="hambuger-bottom"></span>
+        </button>
+      </div>
+      <!-- mobile menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col hidden items-center self-end sm:self-center py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto right-6 left-6 drop-shadow-md"
+        >
+          <a href="$">Pricing</a>
+          <a href="$">About us</a>
+          <a href="$">Services</a>
+          <a href="$">Careers</a>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <section id="hero">
+      <!-- flex container -->
+      <div
+        class="container flex flex-col-reverse md:flex-row items-center mt-10 mx-auto px-6 space-y-0 md:space-y-0"
+      >
+        <!-- left item -->
+        <div class="flex flex-col space-y-12 mb-32 md:w-1/2">
+          <h1
+            class="text-4xl max-w-md font-bold text-center md:text-5xl md:text-left"
+          >
+            Bring everyone together to create better products
+          </h1>
+          <p class="max-w-sm-text-center md:text-left text-darkGrayishBlue">
+            Manage makes it easier for software teams to play day-to-day tasks
+            while keeping plans and objectives in check
+          </p>
+          <div class="flex items-center justify-center md:justify-start">
+            <a
+              href="#"
+              class="bg-brightRed hover:bg-brightRedLight rounded-full px-x p-3 mt-2 text-white"
+              >Get Started</a
+            >
+          </div>
+        </div>
+        <!-- right item -->
+        <div class="md:w-1/2">
+          <img src="/img/illustration-intro.svg" alt="" />
+        </div>
+        <div></div>
+      </div>
+    </section>
+    <!-- features section -->
+    <section id="features">
+      <!-- features container -->
+      <div
+        class="container flex flex-col mx-auto space-x-4 md:flex-row md:space-y-0 mt-10"
+      >
+        <!-- whats different -->
+        <div class="flex flex-col space-y-12 md:w-1/2">
+          <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+            Whats different about manage
+          </h2>
+          <p class="max-w-sm text-center md:text-left text-darkGrayishBlue">
+            Manage provides you with all the functionalities you can possibly
+            need as a web developer. It offers optimal latency and response
+            speeds making it the best
+          </p>
+        </div>
+        <!-- numbered list -->
+        <div class="flex flex-col space-y-8 md:w-1/2">
+          <!-- list item 1 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- heading -->
+            <div
+              class="rounded-l-full bg-brightRedSuperLight md:bg-transparent"
+            >
+              <div class="flex items-center space-x-2">
+                <div
+                  class="rounded-full py-2 px-4 md:py-1 bg-brightRed text-white"
+                >
+                  1
+                </div>
+                <h3 class="md:mb-4 font-bold md:hidden">
+                  company-wide progress
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden md:block font-bold text-md">
+                Company-wide progress
+              </h3>
+              <p class="text-darkGrayishBlue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                adipisci esse, accusamus deserunt repellendus reprehenderit
+                laudantium consectetur! Soluta, quaerat, a quibusdam
+                exercitationem doloremque alias dolor dolore fugit atque ducimus
+                commodi perspiciatis maiores, animi enim optio! Quam vitae
+                molestias blanditiis cumque?
+              </p>
+            </div>
+          </div>
+
+          <!-- list item 2 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- heading -->
+            <div
+              class="rounded-l-full bg-brightRedSuperLight md:bg-transparent"
+            >
+              <div class="flex items-center space-x-2">
+                <div
+                  class="rounded-full py-2 px-4 md:py-1 bg-brightRed text-white"
+                >
+                  1
+                </div>
+                <h3 class="md:mb-4 font-bold md:hidden">Zero downtimes</h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden md:block font-bold text-md">Zero downtimes</h3>
+              <p class="text-darkGrayishBlue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                adipisci esse, accusamus deserunt repellendus reprehenderit
+                laudantium consectetur! Soluta, quaerat, a quibusdam
+                exercitationem doloremque alias dolor dolore fugit atque ducimus
+                commodi perspiciatis maiores, animi enim optio! Quam vitae
+                molestias blanditiis cumque?
+              </p>
+            </div>
+          </div>
+
+          <!-- list item 3 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- heading -->
+            <div
+              class="rounded-l-full bg-brightRedSuperLight md:bg-transparent"
+            >
+              <div class="flex items-center space-x-2">
+                <div
+                  class="rounded-full py-2 px-4 md:py-1 bg-brightRed text-white"
+                >
+                  1
+                </div>
+                <h3 class="md:mb-4 font-bold md:hidden">
+                  community collaboration
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden md:block font-bold text-md">
+                Community collaboration
+              </h3>
+              <p class="text-darkGrayishBlue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                adipisci esse, accusamus deserunt repellendus reprehenderit
+                laudantium consectetur! Soluta, quaerat, a quibusdam
+                exercitationem doloremque alias dolor dolore fugit atque ducimus
+                commodi perspiciatis maiores, animi enim optio! Quam vitae
+                molestias blanditiis cumque?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonials -->
+    <section id="testimonials">
+      <!-- container for header and testimonials -->
+      <div class="max-w-6xl mx-auto px-5 mt-32 text-center">
+        <h2 class="text-4xl font-bold">Whats good about manage?</h2>
+        <!-- testimonials container -->
+        <div class="flex flex-col md:flex-row md:space-x-6 mt-12">
+          <!-- Testimonial 2testimonial 1 -->
+          <div
+            class="flex flex-col items-center space-y-6 p-5 rounded-lg bg-gray-50 md:w-1/3"
+          >
+            <img src="/img/avatar-anisha.png" class="w-16 -mt-14" alt="" />
+            <h5 class="text-lg font-bold">Alexis May</h5>
+            <p class="text-sm text-darkGrayishBlue">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum,
+              amet. Tempore quidem nobis hic, adipisci quo unde eligendi impedit
+              ut.
+            </p>
+          </div>
+
+          <!-- Testimonial testimonial 2-->
+          <div
+            class="hidden md:flex flex-col items-center space-y-6 p-5 rounded-lg bg-gray-50 md:w-1/3"
+          >
+            <img src="/img/avatar-ali.png" class="w-16 -mt-14" alt="" />
+            <h5 class="text-lg font-bold">Ali Bravo</h5>
+            <p class="text-sm text-darkGrayishBlue">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum,
+              amet. Tempore quidem nobis hic, adipisci quo unde eligendi impedit
+              ut.
+            </p>
+          </div>
+
+          <!-- Testimonial 2testimonial 3 -->
+          <div
+            class="hidden md:flex flex-col items-center space-y-6 p-5 rounded-lg bg-gray-50 md:w-1/3"
+          >
+            <img src="/img/avatar-richard.png" class="w-16 -mt-14" alt="" />
+            <h5 class="text-lg font-bold">Richard Daives</h5>
+            <p class="text-sm text-darkGrayishBlue">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum,
+              amet. Tempore quidem nobis hic, adipisci quo unde eligendi impedit
+              ut.
+            </p>
+          </div>
+        </div>
+        <!-- button -->
+        <div class="my-12">
+          <a
+            href="#"
+            class="bg-brightRed hover:bg-brightRedLight text-white px-6 p-3 rounded-full"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- call to action -->
+    <section id="callToAction" class="mt-11 bg-brightRed">
+      <div
+        class="container flex flex-col mx-auto items-center justify-between px-6 py-24 space-y-12 md:py-12 md:flex-row md:space-y-0"
+      >
+        <h1
+          class="text-5xl font-bold text-white text-center md:max-w-xl md:text-4xl md:text-left"
+        >
+          Simplify how your team works today.
+        </h1>
+        <a
+          href="#"
+          class="rounded-full hover:bg-brightRed text-black hover:text-white px-6 p-3 bg-white hover:font-bold transition-colors hover:border-2"
+          >Get Started</a
+        >
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-black">
+      <!-- flex container -->
+      <div
+        class="container flex flex-col-reverse justify-between space-y-8 mx-auto py-10 px-6 md:flex-row md:space-y-0 items-center md:items-start"
+      >
+        <!-- social media and logo -->
+        <div
+          class="flex flex-col-reverse md:flex-col items-center md:items-start md:space-y-12 space-y-6"
+        >
+          <!-- logo -->
+          <div class="mt-4">
+            <img src="/img//logo-white.svg" class="h-8" alt="" />
+          </div>
+          <!-- links -->
+          <div class="flex space-x-4">
+            <!-- link 1 -->
+            <a href="">
+              <img src="/img//icon-facebook.svg" class="h-8" alt="" />
+            </a>
+            <!-- link 1 -->
+            <a href="">
+              <img src="/img//icon-instagram.svg" class="h-8" alt="" />
+            </a>
+            <!-- link 1 -->
+            <a href="">
+              <img src="/img//icon-pinterest.svg" class="h-8" alt="" />
+            </a>
+            <!-- link 1 -->
+            <a href="">
+              <img src="/img//icon-youtube.svg" class="h-8" alt="" />
+            </a>
+            <!-- link 1 -->
+            <a href="">
+              <img src="/img//icon-twitter.svg" class="h-8" alt="" />
+            </a>
+          </div>
+        </div>
+        <!-- list menus -->
+        <div class="flex space-x-32 justify-around">
+          <!-- first menu -->
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed">Home</a>
+            <a href="#" class="hover:text-brightRed">Products</a>
+            <a href="#" class="hover:text-brightRed">Pricing</a>
+            <a href="#" class="hover:text-brightRed">About</a>
+          </div>
+          <!-- second menu -->
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed">Careers</a>
+            <a href="#" class="hover:text-brightRed">Community</a>
+            <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+          </div>
+        </div>
+        <!-- input container -->
+        <div class="flex flex-col">
+          <form>
+            <div class="flex space-x-3">
+              <input
+                type="text"
+                class="flex-1 rounded-full focus:outline-none px-4"
+                placeholder="update in your inbox"
+              />
+              <button
+                href="#"
+                class="text-white rounded-full bg-brightRed py-1 px-3 hover:bg-black hover:border-2"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+          <div class="hidden text-white md:block">
+            copyright &copy;2023, All rights reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>

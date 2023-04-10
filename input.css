@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("../img/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: 90% -25%;
+}
+
+#callToAction {
+  background-image: url("../img/bg-simplify-section-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+.hambuger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+.hambuger-top,
+.hambuger-middle,
+.hambuger-bottom {
+  background: #000;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 24px;
+  height: 2px;
+}
+
+.hambuger-middle {
+  transform: translateY(7px);
+}
+.hambuger-bottom {
+  transform: translateY(14px);
+}
+
+@media (max-width: 576px) {
+  body {
+    background-size: 500px;
+    background-position: 50px -50px;
+  }
+}
